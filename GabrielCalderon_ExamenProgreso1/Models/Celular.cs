@@ -15,6 +15,6 @@ namespace GabrielCalderon_ExamenProgreso1.Models
         [AllowNull]
         public int año { get; set; }
         [Required]
-        public double precio { get; set; 
+        public double precio { get; set; }
     }
 }
