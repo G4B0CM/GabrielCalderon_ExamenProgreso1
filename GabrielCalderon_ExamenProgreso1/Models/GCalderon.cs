@@ -6,6 +6,7 @@ namespace GabrielCalderon_ExamenProgreso1.Models
 {
     public class GCalderon
     {
+        //Seria como que la clase usuario
         [Key]
         public int Id { get; set; }
         [StringLength(50)]
@@ -27,7 +28,9 @@ namespace GabrielCalderon_ExamenProgreso1.Models
         public DateTime FechaNacimiento { get; set; }
         [Required]
         public bool EsCliente { get; set; }
-
-
+        //Relacion de un usuario un celular
+        public Celular? Celular { get; set; }
+        [ForeignKey("Celular")]
+        public int CelularId { get; set; }
     }
 }
