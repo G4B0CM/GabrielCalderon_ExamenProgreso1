@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 using System.Diagnostics.CodeAnalysis;
+using System.ComponentModel;
 
 namespace GabrielCalderon_ExamenProgreso1.Models
 {
@@ -13,6 +14,7 @@ namespace GabrielCalderon_ExamenProgreso1.Models
         public string Nombre { get; set; }
         [StringLength(50)]
         [AllowNull]
+        [DisplayName("Apellido(Opcional)")]
         public string Apellido { get; set; }
         [StringLength(50)]
         [EmailAddress]
